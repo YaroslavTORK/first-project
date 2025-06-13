@@ -1,5 +1,5 @@
 body {
-    font-family:"roboto", sans-serif;
+    font-family:"Roboto", sans-serif;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #434455;
@@ -30,14 +30,14 @@ ul{
     list-style-type: none;
 }
 /* header-styles */
-nav .logo-hero{
+.logo-hero-link{
     font-family: "Raleway", sans-serif;
         font-weight: 700;
         font-size: 18px;
         text-transform: uppercase;
-        color: #4d5ae5;
         letter-spacing: 0.03em;
         line-height: 1.17;
+        color: #4d5ae5;
 }
 .logo-hero-studio{
     color: #2e2f42;
@@ -47,7 +47,7 @@ nav .logo-hero{
     font-weight: 500;
     line-height: 1.5;
 }
-.hero-nav-menu a:hover,
+.hero-nav-menu-item a:hover,
 a:focus{
 color: #404bbf;
 }
@@ -66,8 +66,6 @@ a:focus{
 /* hero-section */
 .hero-baner {
     background-color: #2e2f42;
-    width: 1440px;
-    height: 600px;
 }
 .hero-baner-title {
     font-size: 56px;
@@ -84,8 +82,8 @@ a:focus{
     letter-spacing: 0.04em;
     color: #fff;
     text-align: center;
-    width: 169px;
-    height: 56px;
+    
+    
 }
 button{
     cursor: pointer;
@@ -104,8 +102,6 @@ background: #404bbf;
 /* team-section */
 .team-block{
     background-color: #f4f4fd;
-    width: 1440px;
-    height: 732px;
 }
 .team-title{
     line-height: 1.11;
@@ -132,8 +128,6 @@ background: #404bbf;
 /* botom-section */
 .botom{
     background-color: #2e2f42;
-    width: 1440px;
-    height: 312px;
 }
 .botom-logo{
     color: #4d5ae5;
@@ -141,7 +135,7 @@ background: #404bbf;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.12;
+    line-height: 1.17;
     letter-spacing: 0.03em;
 }
 .botom-logo-span{
