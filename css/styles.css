@@ -54,9 +54,12 @@ ul{
     color: #404bbf;
     text-decoration: underline;
 }
+.hero-contacts{
+    font-style: normal;
+}
 .hero-contacts-item-link{
     color: #434455;
-    font-style: normal;
+    line-height: 1.5;
     text-decoration: none;
 }
 .hero-contacts-item-link:hover,
