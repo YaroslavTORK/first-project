@@ -16,11 +16,6 @@ h3{
     font-weight: 500;
     font-size: 20px;
 }
-a{
-    text-decoration: none;
-    color: #2e2f42;
-    font-size: 16px;
-}
 p{
     font-size: 16px;
     line-height: 1.5;
@@ -32,35 +27,40 @@ ul{
 /* header-styles */
 .logo-hero-link{
     font-family: "Raleway", sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        text-transform: uppercase;
-        letter-spacing: 0.03em;
-        line-height: 1.17;
-        color: #4d5ae5;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+    color: #4d5ae5;
+    text-decoration: none;
 }
 .logo-hero-studio{
     color: #2e2f42;
 }
-.hero-nav-menu{
+.hero-navig-menu-item-link{
     color: #2e2f42;
     font-weight: 500;
     line-height: 1.5;
+    text-decoration: none;
+    letter-spacing: 0.02em
 }
-.hero-nav-menu-item a:hover,
-a:focus{
-color: #404bbf;
+.hero-navig-menu-item-link:hover,
+.hero-navig-menu-item-link:focus{
+    color: #404bbf;
+    text-decoration: none;
 }
-.hero-nav-menu-item:active{
+.hero-navig-menu-item-link:active{
     color: #404bbf;
     text-decoration: underline;
 }
-address{
+.hero-contacts-item-link{
     color: #434455;
     font-style: normal;
+    text-decoration: none;
 }
-.hero-contacts a:hover,
-a:focus{
+.hero-contacts-item-link:hover,
+.hero-contacts-item-link:focus{
     color: #404bbf;
 }
 /* hero-section */
@@ -75,15 +75,13 @@ a:focus{
     color: #fff;
 }
 .hero-baner-button {
-    font-family: "roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     background-color: #4d5ae5;
     line-height: 150%;
     letter-spacing: 0.04em;
     color: #fff;
-    text-align: center;
-    
-    
+    text-align: center;  
 }
 button{
     cursor: pointer;
@@ -98,7 +96,6 @@ background: #404bbf;
 .advantages-title{
     letter-spacing: 0.02em
 }
-
 /* team-section */
 .team-block{
     background-color: #f4f4fd;
@@ -108,7 +105,7 @@ background: #404bbf;
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
-.team-list{
+.team-list-item{
     background: #fff;
 }
 .team-list-title{
@@ -137,6 +134,7 @@ background: #404bbf;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    text-decoration: none;
 }
 .botom-logo-span{
     color: #f4f4fd;
