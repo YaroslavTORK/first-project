@@ -6,8 +6,8 @@
     <title>WebStudio</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
-      integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="site-header">
       <div class="container">
         <nav class="hero-navig">
           <div class="hero-navig-direct">
@@ -29,15 +29,13 @@
             >
             <ul class="hero-navig-menu">
               <li class="hero-navig-menu-item">
-                <a href="./index.html" class="hero-navig-menu-item-link"
-                  >Studio</a
-                >
+                <a href="./index.html" class="hero-navig-menu-link">Studio</a>
               </li>
               <li class="hero-navig-menu-item">
-                <a href="" class="hero-navig-menu-item-link">Portfolio</a>
+                <a href="" class="hero-navig-menu-link">Portfolio</a>
               </li>
               <li class="hero-navig-menu-item">
-                <a href="" class="hero-navig-menu-item-link">Contacts</a>
+                <a href="" class="hero-navig-menu-link">Contacts</a>
               </li>
             </ul>
             <address class="hero-contacts">
@@ -46,12 +44,12 @@
                   <li class="hero-contacts-item">
                     <a
                       href="mailto:info@devstudio.com"
-                      class="hero-contacts-item-link"
+                      class="hero-contacts-link"
                       >info@devstudio.com</a
                     >
                   </li>
                   <li class="hero-contacts-item">
-                    <a href="tel:+110001111111" class="hero-contacts-item-link"
+                    <a href="tel:+110001111111" class="hero-contacts-link"
                       >+11 (000) 111-11-11</a
                     >
                   </li>
@@ -66,25 +64,21 @@
       <!--hero section-->
       <section class="hero-baner">
         <div class="container">
-          <div class="hero-baner-inner">
-            <h1 class="hero-baner-title">
-              Effective Solutions <br />
-              for Your Business
-            </h1>
-            <button type="button" class="hero-baner-button">
-              Order Service
-            </button>
-          </div>
+          <h1 class="hero-baner-title">
+            Effective Solutions <br />
+            for Your Business
+          </h1>
+          <button type="button" class="hero-baner-button">Order Service</button>
         </div>
       </section>
       <!--our advantages section-->
       <section class="advantages">
         <div class="container">
-          <h2 class="advantages-title">Our Advantages</h2>
+          <h2 class="visually-hidden">Our Advantages</h2>
           <ul class="advantages-list">
             <li class="advantages-list-item">
               <h3 class="advantages-list-item-title">Strategy</h3>
-              <p class="advantages-list-sitem-text">
+              <p class="advantages-list-item-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -125,8 +119,10 @@
                 width="264"
                 class="team-list-img"
               />
-              <h3 class="team-list-title">Mark Guerrero</h3>
-              <p class="team-list-text">Product Designer</p>
+              <div class="team-list-card">
+                <h3 class="team-list-title">Mark Guerrero</h3>
+                <p class="team-list-text">Product Designer</p>
+              </div>
             </li>
             <li class="team-list-item">
               <img
@@ -135,8 +131,10 @@
                 width="264"
                 class="team-list-img"
               />
-              <h3 class="team-list-title">Tom Ford</h3>
-              <p class="team-list-text">Frontend Developer</p>
+              <div class="team-list-card">
+                <h3 class="team-list-title">Tom Ford</h3>
+                <p class="team-list-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-list-item">
               <img
@@ -145,8 +143,10 @@
                 width="264"
                 class="team-list-img"
               />
-              <h3 class="team-list-title">Camila Garcia</h3>
-              <p class="team-list-text">Marketing</p>
+              <div class="team-list-card">
+                <h3 class="team-list-title">Camila Garcia</h3>
+                <p class="team-list-text">Marketing</p>
+              </div>
             </li>
             <li class="team-list-item">
               <img
@@ -155,8 +155,10 @@
                 width="264"
                 class="team-list-img"
               />
-              <h3 class="team-list-title">Daniel Wilson</h3>
-              <p class="team-list-text">UI Designer</p>
+              <div class="team-list-card">
+                <h3 class="team-list-title">Daniel Wilson</h3>
+                <p class="team-list-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -173,8 +175,10 @@
                 width="360"
                 class="projects-list-img"
               />
-              <h3 class="projects-list-item-title">Banking App</h3>
-              <p class="projects-list-item-text">App</p>
+              <div class="projects-card">
+                <h3 class="projects-list-title">Banking App</h3>
+                <p class="projects-list-text">App</p>
+              </div>
             </li>
             <li class="projects-list-item">
               <img
@@ -183,18 +187,22 @@
                 width="360"
                 class="projects-list-img"
               />
-              <h3 class="projects-list-item-title">Cashless Payment</h3>
-              <p class="projects-list-item-text">Marketing</p>
+              <div class="projects-card">
+                <h3 class="projects-list-title">Cashless Payment</h3>
+                <p class="projects-list-text">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="projects-list-item">
               <img
                 src="./images/portfolio/meditation.jpg"
                 alt="meditation-app-design"
                 width="360"
                 class="projects-list-img"
               />
-              <h3 class="projects-list-item-title">Meditation App</h3>
-              <p class="projects-list-item-text">App</p>
+              <div class="projects-card">
+                <h3 class="projects-list-title">Meditation App</h3>
+                <p class="projects-list-text">App</p>
+              </div>
             </li>
             <li class="projects-list-item">
               <img
@@ -203,18 +211,22 @@
                 width="360"
                 class="projects-list-img"
               />
-              <h3 class="projects-list-item-title">Taxi Service</h3>
-              <p class="projects-list-item-text">Marketing</p>
+              <div class="projects-card">
+                <h3 class="projects-list-title">Taxi Service</h3>
+                <p class="projects-list-text">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="projects-list-item">
               <img
                 src="./images/portfolio/illustrator.jpg"
                 alt="screen-ilustration"
                 width="360"
                 class="projects-list-img"
               />
-              <h3 class="projects-list-item-title">Screen Illustrations</h3>
-              <p class="projects-list-item-text">Design</p>
+              <div class="projects-card">
+                <h3 class="projects-list-title">Screen Illustrations</h3>
+                <p class="projects-list-text">Design</p>
+              </div>
             </li>
             <li class="projects-list-item">
               <img
@@ -223,8 +235,10 @@
                 width="360"
                 class="projects-list-img"
               />
-              <h3 class="projects-list-item-title">Online Courses</h3>
-              <p class="projects-list-item-text">Marketing</p>
+              <div class="projects-card">
+                <h3 class="projects-list-title">Online Courses</h3>
+                <p class="projects-list-text">Marketing</p>
+              </div>
             </li>
           </ul>
         </div>
