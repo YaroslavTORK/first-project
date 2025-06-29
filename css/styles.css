@@ -293,6 +293,9 @@ ul{
     height: 100%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.team-icons-link:focus {
+    background-color: #404bbf;
+}
 /* portfolio-section */
 .projects{
     padding-top: 120px;
@@ -380,11 +383,13 @@ ul{
 .bottom-logo-span{
     color: #f4f4fd;
 }
+.bottom-logo-text{
+    margin-right: 120px;
+}
 .bottom-text{
     color: #f4f4fd;
     max-width: 264px;
     height: 72px;
-    margin-right: 120px;
 }
 .bottom-social-text{
     margin-bottom: 16px;
