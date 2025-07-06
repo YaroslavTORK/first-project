@@ -548,9 +548,10 @@
             </li>
           </ul>
         </div>
-        <form class="bottom-subscr">
-          <label for="subscr-email" class="subscr-title">Subscribe</label>
-          <div class="subscr-wrap">
+        <div class="bottom-subscr">
+          <p class="subscr-title">Subscribe</p>
+          <form class="subscr-form">
+            <label for="subscr-email" class="subscr-area"></label>
             <input
               type="email"
               name="subscr-email"
@@ -560,12 +561,12 @@
             />
             <button type="submit" class="subscr-button">
               Subscribe
-              <svg width="24" height="20" class="subscr-svg">
+              <svg width="24" height="24" class="subscr-svg">
                 <use href="./images/plane-icon.svg"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="modal-overlay">
@@ -575,17 +576,15 @@
             <use href="./images/icons.svg#icon-close-x"></use>
           </svg>
         </button>
+        <p class="order-title">Leave your contacts and we will call you back</p>
         <form class="order-form">
-          <p class="order-title">
-            Leave your contacts and we will call you back
-          </p>
           <div class="input-wrap">
-            <label for="username" class="order-subtitle">Name</label>
+            <label for="user-name" class="order-subtitle">Name</label>
             <div class="input-wrap-modul">
               <input
                 type="text"
-                name="username"
-                id="username"
+                name="user-name"
+                id="user-name"
                 class="order-text-zone"
               />
               <svg width="18" height="24" class="input-icon">
@@ -594,12 +593,12 @@
             </div>
           </div>
           <div class="input-wrap">
-            <label for="user_phone" class="order-subtitle">Phone</label>
+            <label for="user-phone" class="order-subtitle">Phone</label>
             <div class="input-wrap-modul">
               <input
                 type="tel"
-                name="user_phone"
-                id="user_phone"
+                name="user-phone"
+                id="user-phone"
                 class="order-text-zone"
               />
               <svg width="18" height="24" class="input-icon">
@@ -622,31 +621,33 @@
             </div>
           </div>
           <div class="input-wrap">
-            <label for="user_coment" class="order-subtitle">Comment</label>
+            <label for="user-comment" class="order-subtitle">Comment</label>
             <textarea
-              name="user_coment"
-              class="coment-text-zone"
-              rows="8"
+              id="user-comment"
+              name="user-comment"
+              class="comment-text-zone"
               placeholder="Text input"
             ></textarea>
           </div>
           <div class="privacy-wrap">
-            <label for="privacy_check" class="privacy">
-              <input
-                type="checkbox"
-                name="privacy_check"
-                id="privacy_check"
-                checked="checked"
-              />
+            <input
+              type="checkbox"
+              name="user-privicy"
+              id="user-privicy"
+              value="true"
+              class="visually-hidden"
+            />
+            <label for="user-privicy" class="privacy">
               <span class="checkmark">
                 <svg width="10" height="8" class="check-icon">
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
-              <p class="privacy-text">
-                I accept the terms and conditions of the
-                <span class="privacy-link">Privacy Policy</span>
-              </p>
+              I accept the terms and conditions of the<a
+                href=""
+                class="privacy-link"
+                >Privacy Policy</a
+              >
             </label>
           </div>
           <button type="submit" class="overlay-submit">Send</button>
