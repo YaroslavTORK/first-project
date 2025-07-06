@@ -490,6 +490,11 @@ ul{
     margin-left: 16px;
  }
  /* overlay-section */
+ .modal-overlay.is-open {
+     opacity: 1;
+     visibility: visible;
+     pointer-events: auto;
+ }
  .modal-overlay{
     top: 0;
     left: 0;
@@ -498,9 +503,9 @@ ul{
     position: fixed;
     background: rgba(46, 47, 66, 0.4);
     z-index: 999;
-    /* opacity: 0;
+    opacity: 0;
     visibility: hidden;
-    pointer-events: none; */
+    pointer-events: none;
     transition:  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
  .overlay-area{
@@ -563,7 +568,7 @@ ul{
  .input-wrap{
     margin-bottom: 8px;
  }
- .input-wrap:last-child{
+ .input-wrap-last{
     margin-bottom: 16px;
  }
   .input-wrap-modul:hover .order-text-zone,
@@ -578,10 +583,6 @@ ul{
     fill: #4d5ae5;
     border-color: #4d5ae5;
 }
-    /* .order-text-zone:focus::placeholder,
-    .comment-text-zone:focus::placeholder {
-    color: #4d5ae5;
-    } */
 .order-title{
     font-weight: 500;
     font-size: 16px;
@@ -608,8 +609,6 @@ ul{
     height: 40px;
     background-color: transparent;
     outline: transparent;
-    /* padding-top: 11px;
-    padding-bottom: 11px; */
     box-sizing: border-box;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -668,21 +667,23 @@ ul{
     border: 1px solid rgba(46, 47, 66, 0.4);
     fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    input[type="checkbox"]:focus+.checkmark {
-    border-color: #404bbf;
+    margin-right: 8px;
 }
-.privacy-wrap input:checked ~ .checkmark {
-    background-color:#404bbf ;
-    fill: #F4F4FD;
+
+    /* input[type="checkbox"]:focus+.checkmark {
+    border-color: #404bbf;
+} */
+input[type="checkbox"]:checked+label .checkmark {
+    background-color: #404bbf;
     border: none;
 }
-.check-icon{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+input[type="checkbox"]:checked+label .checkmark .check-icon {
+    fill: #f4f4fd;
+}
+
+input[type="checkbox"]:focus+label .checkmark {
+    border-color: #404bbf;
 }
 /* .privacy-text{
     line-height: 1.17;
@@ -695,7 +696,8 @@ ul{
 .privacy-link {
     text-decoration: underline;
     cursor: pointer;
-    color: #4d5ae5
+    color: #4d5ae5;
+    outline: none;
 }
 .overlay-submit{
     display: block;
