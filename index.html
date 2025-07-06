@@ -548,7 +548,110 @@
             </li>
           </ul>
         </div>
+        <form class="bottom-subscr">
+          <label for="subscr-email" class="subscr-title">Subscribe</label>
+          <div class="subscr-wrap">
+            <input
+              type="email"
+              name="subscr-email"
+              id="subscr-email"
+              placeholder="E-mail"
+              class="subscr-input"
+            />
+            <button type="submit" class="subscr-button">
+              Subscribe
+              <svg width="24" height="20" class="subscr-svg">
+                <use href="./images/plane-icon.svg"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
+    <div class="modal-overlay">
+      <div class="overlay-area">
+        <button class="close-overlay-btn" type="button">
+          <svg width="8" height="8" class="close-icon">
+            <use href="./images/icons.svg#icon-close-x"></use>
+          </svg>
+        </button>
+        <form class="order-form">
+          <p class="order-title">
+            Leave your contacts and we will call you back
+          </p>
+          <div class="input-wrap">
+            <label for="username" class="order-subtitle">Name</label>
+            <div class="input-wrap-modul">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                class="order-text-zone"
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="./images/icons.svg#icon-user-name"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-wrap">
+            <label for="user_phone" class="order-subtitle">Phone</label>
+            <div class="input-wrap-modul">
+              <input
+                type="tel"
+                name="user_phone"
+                id="user_phone"
+                class="order-text-zone"
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="./images/icons.svg#icon-phoneicon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-wrap">
+            <label for="user_email" class="order-subtitle">Email</label>
+            <div class="input-wrap-modul">
+              <input
+                type="email"
+                name="user_email"
+                id="user_email"
+                class="order-text-zone"
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="./images/icons.svg#icon-emailicon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-wrap">
+            <label for="user_coment" class="order-subtitle">Comment</label>
+            <textarea
+              name="user_coment"
+              class="coment-text-zone"
+              rows="8"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="privacy-wrap">
+            <label for="privacy_check" class="privacy">
+              <input
+                type="checkbox"
+                name="privacy_check"
+                id="privacy_check"
+                checked="checked"
+              />
+              <span class="checkmark">
+                <svg width="10" height="8" class="check-icon">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              <p class="privacy-text">
+                I accept the terms and conditions of the
+                <span class="privacy-link">Privacy Policy</span>
+              </p>
+            </label>
+          </div>
+          <button type="submit" class="overlay-submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
