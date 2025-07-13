@@ -21,7 +21,7 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="container">
+      <div class="container site-header-wrap">
         <nav class="hero-navig">
           <a href="./index.html" class="logo-hero-link"
             >Web<span class="logo-hero-studio">Studio</span></a
@@ -54,6 +54,99 @@
             </li>
           </ul>
         </address>
+        <button class="head-menu-btn" type="submit">
+          <svg width="24" height="24" class="head-menu-icon">
+            <use href="./images/icons.svg#icon-menu-btn"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="head-menu-wrap">
+        <div class="container head-menu-wrap-container">
+          <button type="submit" class="head-menu-close-btn">
+            <svg width="8" height="8" class="close-icon">
+              <use href="./images/icons.svg#icon-close-x"></use>
+            </svg>
+          </button>
+          <nav class="head-mobmenu-navig">
+            <ul class="head-mobmenu-navlist">
+              <li class="head-mobmenu-item">
+                <a href="./index.html" class="head-mobmenu-link active"
+                  >Studio</a
+                >
+              </li>
+              <li class="head-mobmenu-item">
+                <a href="" class="head-mobmenu-link">Portfolio</a>
+              </li>
+              <li class="head-mobmenu-item">
+                <a href="" class="head-mobmenu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="head-mobmenu-contacts">
+            <ul class="head-mobmenu-contacts-list">
+              <li class="mobmenu-contacts-list-item active">
+                <a href="tel:+110001111111" class="head-mobmenu-contacts-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobmenu-contacts-list-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="head-mobmenu-contacts-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="head-mobmenu-social">
+            <ul class="mobmenu-icons-list">
+              <li class="mobmenu-icons-item">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  class="mobmenu-icons-link"
+                >
+                  <svg width="24" height="24" class="icons-svg">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobmenu-icons-item">
+                <a
+                  href="https://x.com/"
+                  target="_blank"
+                  class="mobmenu-icons-link"
+                >
+                  <svg width="24" height="24" class="icons-svg">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobmenu-icons-item">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  class="mobmenu-icons-link"
+                >
+                  <svg width="24" height="24" class="icons-svg">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobmenu-icons-item">
+                <a
+                  href="https://ua.linkedin.com/"
+                  target="_blank"
+                  class="mobmenu-icons-link"
+                >
+                  <svg width="24" height="24" class="icons-svg">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -132,6 +225,10 @@
           <ul class="team-list">
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/team/mark@1x.jpg 1x,
+                  ./images/team/mark@2x.jpg 2x
+                "
                 src="./images/team/mark.jpg"
                 alt="mark-foto"
                 width="264"
@@ -190,6 +287,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/team/tom@1x.jpg 1x,
+                  ./images/team/tom@2x.jpg 2x
+                "
                 src="./images/team/tom.jpg"
                 alt="tom-foto"
                 width="264"
@@ -248,6 +349,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/team/camila@1x.jpg 1x,
+                  ./images/team/camila@2x.jpg 2x
+                "
                 src="./images/team/camila.jpg"
                 alt="camila-foto"
                 width="264"
@@ -306,6 +411,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/team/daniel@1x.jpg 1x,
+                  ./images/team/daniel@2x.jpg 2x
+                "
                 src="./images/team/daniel.jpg"
                 alt="daniel-foto"
                 width="264"
@@ -373,9 +482,13 @@
             <li class="projects-list-item">
               <div class="card-wrap">
                 <img
-                  src="./images/portfolio/bankapp.jpg"
+                  srcset="
+                    ./images/portfolio/bank@1x.jpg 1x,
+                    ./images/portfolio/bank@2x.jpg 2x
+                  "
+                  src="./images/portfolio/bank.jpg"
                   alt="banking-app-design"
-                  width="360"
+                  width="356"
                   class="projects-list-img"
                 />
                 <p class="projects-overlay">
@@ -392,9 +505,13 @@
             <li class="projects-list-item">
               <div class="card-wrap">
                 <img
-                  src="./images/portfolio/payment.jpg"
+                  srcset="
+                    ./images/portfolio/cashless@1x.jpg 1x,
+                    ./images/portfolio/cashless@2x.jpg 2x
+                  "
+                  src="./images/portfolio/cashless.jpg"
                   alt="people-pay-by-qr"
-                  width="360"
+                  width="356"
                   class="projects-list-img"
                 />
                 <p class="projects-overlay">
@@ -411,9 +528,13 @@
             <li class="projects-list-item">
               <div class="card-wrap">
                 <img
+                  srcset="
+                    ./images/portfolio/meditation@1x.jpg 1x,
+                    ./images/portfolio/meditation@2x.jpg 2x
+                  "
                   src="./images/portfolio/meditation.jpg"
                   alt="meditation-app-design"
-                  width="360"
+                  width="356"
                   class="projects-list-img"
                 />
                 <p class="projects-overlay">
@@ -430,9 +551,13 @@
             <li class="projects-list-item">
               <div class="card-wrap">
                 <img
+                  srcset="
+                    ./images/portfolio/taxi@1x.jpg 1x,
+                    ./images/portfolio/taxi@2x.jpg 2x
+                  "
                   src="./images/portfolio/taxi.jpg"
                   alt="driver-use-taxi-app"
-                  width="360"
+                  width="356"
                   class="projects-list-img"
                 />
                 <p class="projects-overlay">
@@ -449,9 +574,13 @@
             <li class="projects-list-item">
               <div class="card-wrap">
                 <img
-                  src="./images/portfolio/illustrator.jpg"
+                  srcset="
+                    ./images/portfolio/ilustr@1x.jpg 1x,
+                    ./images/portfolio/ilustr@2x.jpg 2x
+                  "
+                  src="./images/portfolio/illustr.jpg"
                   alt="screen-ilustration"
-                  width="360"
+                  width="356"
                   class="projects-list-img"
                 />
                 <p class="projects-overlay">
@@ -468,9 +597,13 @@
             <li class="projects-list-item">
               <div class="card-wrap">
                 <img
+                  srcset="
+                    ./images/portfolio/courses@1x.jpg 1x,
+                    ./images/portfolio/courses@2x.jpg 2x
+                  "
                   src="./images/portfolio/courses.jpg"
                   alt="girl-meet-on-course"
-                  width="360"
+                  width="356"
                   class="projects-list-img"
                 />
                 <p class="projects-overlay">
@@ -570,7 +703,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay" class="hidden">
       <div class="overlay-area">
         <button class="close-overlay-btn" type="button">
           <svg width="8" height="8" class="close-icon">
@@ -644,11 +777,13 @@
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the<a
-                href=""
-                class="privacy-link"
-                >Privacy Policy</a
-              >
+              <span class="privicy-text">
+                I accept the terms and conditions of the<a
+                  href=""
+                  class="privacy-link"
+                  >Privacy Policy</a
+                >
+              </span>
             </label>
           </div>
           <button type="submit" class="overlay-submit">Send</button>
